@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Menti Metrics Data Solutions</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Alcohol Consumption', 'Mental Health'],
+          [ 8,      12],
+          [ 4,      5.5],
+          [ 11,     14],
+          [ 4,      5],
+          [ 3,      3.5],
+          [ 6.5,    7]
+        ]);
+
+        var options = {
+          title: 'Alcohol vs. Mental Health',
+          hAxis: {title: 'Alcohol consumption by males', minValue: 0, maxValue: 15},
+          vAxis: {title: 'Mental Health', minValue: 0, maxValue: 15},
+          legend: 'none'
+        };
+
+        var chart = new google.visualization.ScatterChart(document.getElementById('chart_div'));
+
+        chart.draw(data, options);
+      }
+      </script>
+
+       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Popularity'],
+          ['Germany', 200],
+          ['United States', 300],
+          ['Brazil', 400],
+          ['Canada', 500],
+          ['France', 600],
+          ['RU', 700]
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Depression'],
+          ['Smoking',     11],
+          ['Relationships',      2],
+          ['Working Hours',  2],
+          ['Obesity', 2],
+          ['Alcohol',    7]
+        ]);
+
+        var options = {
+          title: 'Activities and Depression trends',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type = "text/javascript">
+     google.charts.setOnLoadCallback(drawChart);
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Population', 'Depression Levels'],
+    [8, 37], [4, 19.5], [11, 52], [4, 22], [3, 16.5], [6.5, 32.8], [14, 72]]);
+
+  var options = {
+    title: 'Population vs Depression Levels',
+    hAxis: {title: 'Population'},
+    vAxis: {title: 'Depression Levels'},
+    legend: 'none',
+    trendlines: { 0: {} }    // Draw a trendline for data series 0.
+  };
+
+  var chart = new google.visualization.ScatterChart(document.getElementById('chart_div2'));
+  chart.draw(data, options);
+}
+     </script>
+
+      </head>
+
+  
+
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid" id="navbar_prop">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="burger_btn">
+    <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button> 
+      <a class="navbar-brand" id="test" href="#jumbo_head"><span class = "font_prop">MENTI METRICS</span></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#jumbo_head"><span class = "font_prop">Dashboard</span></a></li>
+      <li><a href="#about_head"><span class = "font_prop">Analytics</span></a></li>
+      <li><a href="#portfolio_head"><span class = "font_prop">Personalise</span></a></li>
+      <li><a href="#contact_head"><span class = "font_prop">Contact</span></a></li>
+    </ul>
+    </div>
+   
+  </div>
+</nav>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+
+<div class = "jumbotron" id="jumbo_head">
+  <div class = "container-fluid text-center">
+  <img src = "C:\Users\Abhimanyue Singh\Desktop\hku hackathon\logo.png" class = "img img-responsive img-circle" width= "250" height="250" id="img">
+  <h3 style= "font-size:50px" id="h3_head">MENTI METRICS</h3>
+    <h4 id="h4_head">Providing Data Driven Mental Health Solutions</h4>
+  </div>
+</div>
+
+<!--- Analytics -->
+
+<div class = "container-fluid about_me" id="about_head">
+  <h2 style = "font-family: 'Josefin Sans' ; font-weight:bold; border-bottom: 1px solid #000; padding-bottom: 3px ;color:#f4511e" class= "text-center slideanim">Your Analytics</h2>
+      <div class = "row">
+      <div id="chart_div" class="col-sm-6 col-lg-3 col-md-6" style="width: 600px; height: 500px;"></div>
+       <div id="regions_div" class="col-sm-3 col-lg-3 col-md-6" style="width: 600px; height: 500px;"></div>
+      </div>
+      <div class = "row">
+      <div id="donutchart" class="col-sm-6 col-lg-3 col-md-6" style="width: 600px; height: 500px;"></div>
+      <div id="chart_div2" class="col-sm-6 col-lg-3 col-md-6" style="width: 600px; height: 500px;"></div>
+      </div>
+</div>
+<!--Portfolio-->
+<div class = "jumbotron portfolio bg-grey" id="portfolio_head">
+<div class="container-fluid text-center slideanim ">
+  <h2><span style = "color:#f4511e; font-family:'Josefin Sans'; font-weight:bold; text-decoration:underline">Who can use it?</span></h2>
+  <h4 style= "color: #f4511e; margin-bottom:30px">Research Driven data analytics soltutions</h4>
+
+  <div class="row text-center">
+     <p style ="color:black"><span class="glyphicon glyphicon-ok"></span>Governments can use it to make improve a city mental health</p>
+     <p style ="color:black"><span class="glyphicon glyphicon-ok"></span>Socities can utilise it help each other in preventing suicides</p>
+     <p style ="color:black"><span class="glyphicon glyphicon-ok"></span>Individual Users to track their mental levels and become Mentally Strong.</p>
+     
+
+
+   
+</div>
+  </div>
+  
+ 
+  
+  </body>
+  
+  <style>
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+</style>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
