@@ -1,0 +1,22 @@
+Race/Ethnicity,Smoking,Drinkers,Working Hours,Depressed 
+American Indian/Alaska Natives (non-Hispanic),21.90%,74.27,38.7,1
+Asians (non-Hispanic),7.00%,62.62,41.1,0
+Blacks (non-Hispanic),16.70%,65.48,36,1
+Hispanics,10.10%,61.51,38.3,1
+Multiple Races (non-Hispanic),20.20%,69.99,39.7,0
+Whites (non-Hispanic),16.60%,36.11,37.1,1
+Men,16.70%,18.51,40.6,1
+Women,13.60%,13.85,37.3,1
+18–24 years,13.00%,24.19,38,0
+25–44 years,17.70%,61.51,39.8,1
+45–64 years,17.00%,36.11,35.5,1
+65 years and older,  8.4%,69.99,25.2,0
+Less than high school,24.20%,36.11,15.12,1
+GED,34.10%,13.76,37.1,1
+High school graduate,19.80%,8.81,37.8,0
+Some college,18.50%,18.84,35.2,1
+Associate degree,16.60%,24.19,34.4,1
+Undergraduate degree,  7.4%,40.48,39.7,0
+Graduate degree,  3.6%,15.69,40.3,1
+Below poverty level,26.10%,19.77,37.8,1
+At or above poverty level,13.90%,40.48,40.3,1
